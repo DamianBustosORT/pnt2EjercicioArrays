@@ -13,6 +13,7 @@ const personajesSimpsons = [
 //personajesSimpsons.forEach(personaje => {
 //    console.log(personaje.nombre);
 //});
+console.log(personajesSimpsons[0]);
 
 const pjMenores = 
     personajesSimpsons.filter(personaje => personaje.edad < 18);
@@ -28,4 +29,32 @@ console.log(sumaEdades);
 
 //Ejercicio 3
 const nombres = personajesSimpsons.map(personaje => personaje.nombre);
-console.log(nombres);
+console.log('Ejercicio 3 ' + nombres);
+
+//Ejercicio 4
+const personajesActualizados = personajesSimpsons.map(personaje =>
+    personaje.edad < 18
+        ? { ...personaje, rol: "Estudiante" }
+        : personaje
+);
+
+console.log('Ejercicio 4');
+ personajesActualizados.forEach(personaje => {
+    console.log(personaje);
+})
+
+//Version Larga
+/*const personajesActualizados = personajesSimpsons.map(personaje => {
+
+    if (personaje.edad < 18) {
+
+        return {
+            ...personaje,
+            rol: "Estudiante"
+        };
+    }
+
+    return personaje;
+});*/
+
+
