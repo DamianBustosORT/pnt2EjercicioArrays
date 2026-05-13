@@ -39,7 +39,7 @@ const personajesActualizados = personajesSimpsons.map(personaje =>
 );
 
 console.log('Ejercicio 4');
- personajesActualizados.forEach(personaje => {
+personajesActualizados.forEach(personaje => {
     console.log(personaje);
 })
 
@@ -57,4 +57,18 @@ console.log('Ejercicio 4');
     return personaje;
 });*/
 
+//Ejercicio 5
 
+const personajesExtra = [
+    { nombre: "Apu", edad: 45, rol: "Dueño de la tienda" },
+    { nombre: "Skinner", edad: 42, rol: "Director de la escuela" },
+    { nombre: "Barney", edad: 38, rol: "Ebrio" }
+];
+const todosLosPersonajes = [
+    ...personajesSimpsons,
+    ...personajesExtra
+];
+console.log('Ejercicio 5');
+todosLosPersonajes.forEach(personaje => {
+    console.log(personaje.nombre);
+});
