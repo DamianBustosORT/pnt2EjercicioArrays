@@ -72,3 +72,10 @@ console.log('Ejercicio 5');
 todosLosPersonajes.forEach(personaje => {
     console.log(personaje.nombre);
 });
+
+//Ejercicio 6
+console.log('Ejercicio 6');
+const personajesOrdenados = [...todosLosPersonajes].sort((a, b) => a.edad - b.edad);
+personajesOrdenados.forEach(personaje => {
+    console.log(personaje.nombre);
+});
