@@ -21,4 +21,7 @@ pjMenores.forEach(element => {
     console.log(element.nombre);
 });
 
-const asjdnf= 2;
+//Ejercicio 2
+
+const sumaEdades = personajesSimpsons.reduce((acumulador, personaje) => acumulador + personaje.edad, 0);
+console.log(sumaEdades);
