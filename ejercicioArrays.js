@@ -10,3 +10,15 @@ const personajesSimpsons = [
 { nombre: "Nelson", edad: 12, rol: "Bravucón" },
 { nombre: "Martin", edad: 10, rol: "Compañero de clase" }
 ];
+//personajesSimpsons.forEach(personaje => {
+//    console.log(personaje.nombre);
+//});
+
+const pjMenores = 
+    personajesSimpsons.filter(personaje => personaje.edad < 18);
+
+pjMenores.forEach(element => {
+    console.log(element.nombre);
+});
+
+const asjdnf= 2;
